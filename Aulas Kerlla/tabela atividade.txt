@@ -1,0 +1,10 @@
+NOME	VALOR DA PROVA	QTAS QUESTÕES	ONLINE OU NÃO	OBJETIVO
+
+OKRCP	  49 dolares	 40 questoes       online      trabalhar com objetivos e resultados
+
+kanban	  49 dolares     40 questoes       online      Rastreamento do Trabalho em Processo 
+
+scrum	  49 dolares	 40 questoes	   online      Introdução a Ágil e Scrum
+
+devops	  49 dolares	 40 questoes       online      Ciclo de vida de desenvolvimento de software
+

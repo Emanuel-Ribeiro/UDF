@@ -1,0 +1,67 @@
+Fundamentos - 
+
+TypeScript é uma ferramenta que adiciona tipagem estática ao JavaScript
+que por padrão é uma linguagem que possui tipagem dinâmica, ou seja, 
+as variáveis e funções podem assumir tipos distintos durante o tempo de execução.
+
+Vale lembrar o código TypeScript é utilizando somente em ambiente de
+desenvolvimento e é totalmente convertido para JavaScript no processo 
+de build de produção, ou seja, o navegador ou o Node lerão somente código JS.
+
+Como funciona? -
+
+TypeScript é uma linguagem que “transpila” para JavaScript, ou seja, se você vai desenvolver
+uma página que usa JavaScript, pode utilizar o TypeScript e “transpilar” o código 
+para o JavaScript (que é a linguagem de programação que o navegador de fato compreende). 
+O termo “transpilar” é utilizado ao invés de “compilar”, pois entende-se que o 
+processo de compilação transforma um programa escrito em uma 
+linguagem de um nível mais alto para um nível mais baixo (linguagem de máquina); 
+já o processo de transpilação mantém o mesmo nível da linguagem 
+(ou seja, a transpilação transforma um programa escrito em uma linguagem de alto nível para outra linguagem de alto nível).
+
+O que o TypeScript traz de diferente do JavaScript são muitas coisas. 
+Realmente muitas coisas. 
+Tanto que seria impossível entrar em detalhes sobre todas elas aqui.
+
+Historico -
+
+Disponibilizada ao público pela Microsoft em 2012, tendo a versão 1.0 disponibilizada em 2014
+TypeScript é uma linguagem criada pela Microsoft e nada mais é que 
+um superset(extensao) do ECMAScript 6 que, por sua vez, é um superset do ECMAScript 5, 
+que usamos mais frequentemente como base para nosso clássico JavaScript. 
+Isso significa que praticamente qualquer código JavaScript é também um código TypeScript.
+
+Foco -
+
+O foco do typescript é inteiramente comercial pois esse tem o objetivo de tornar
+a programaçao em javascript mais agil
+
+vantagens - 
+
+A grande empolgação por trás de usar uma ferramenta como essa é 
+a possibilidade de descobrir erros durante o desenvolvimento e 
+incrementar a inteligência (IntelliSense) da IDE que estamos utilizando.
+
+Além de ajudar no ambiente de desenvolvimento, 
+o TypeScript ainda permite que utilizemos de funcionalidades da linguagem
+que ainda não estão disponíveis de forma nativa, por exemplo, 
+no Node.js podemos utilizar os ES Modules (import/export) normalmente.
+
+Outro ponto bem legal é que podemos transpilar nosso código para que o mesmo seja lido 
+por todas versões de browsers, assim como fazemos com o Babel em aplicações 
+totalmente JavaScript.
+
+hello world -
+
+const hello = "Hello";
+const world = "World";
+
+console.log(hello + " " + world);
+
+tipo de tradutor -
+
+o typescript seria classificado como um transpilador pois a transpilação transforma 
+um programa escrito em uma linguagem de alto nível para outra linguagem de alto nível
+e é justamente oq ocorre pois ele se transforma em javascript
+
+

@@ -38,21 +38,27 @@ def divisao(a, b):
   else:
     print(f"A divisao dos numeros {a} e {b} é igual a: {a / b}")
 
-def fatorial(a):
+def f(a):
   if(a == 0):
-    print(0)
+    return(0)
   elif(a == 1):
-    print(1)
+    return(1)
   else:
-    print(f"O fatorial do numero {a} é {a * fatorial(a-1)}")
+    return(a * f(a-1))
+
+def fatorial(a):
+  print(f"O fatorial de {a} é: {a * f(a-1)}")
+
+def e(a,b):
+  if(a == 0):
+    return (1)
+  elif(b == 1):
+    return (a)
+  else:
+    return(a*e(a,b -1))
 
 def exponencial(a,b):
-  if(a == 0):
-    print (1)
-  elif(b == 1):
-    print (a)
-  else:
-    print(f"O numero {a} elevado a {b} é igual a: {a*exponencial(a,b -1)}")
+  print(f"O numero {a} elevado a {b} é igual a: {a*e(a,b -1)}")
 
 while continua != 0:
 

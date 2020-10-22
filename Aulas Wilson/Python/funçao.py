@@ -6,60 +6,84 @@
 escolha = int(0)
 continua = int(1)
 
-def soma(num1, num2):
-  if (num1 == 0):
-    return(num2)
-  elif (num2 == 0):
-    return(num1)
+def soma(a, b):
+  if (a == 0):
+    print(b)
+  elif (b == 0):
+    print(a)
   else:
-    return(num1 + num2)
+    print(f"A soma dos numeros {a} e {b} é igual a: {a + b}")
 
-def subtracao(num1, num2):
-  if (num1 == 0):
-    return(num2)
-  elif (num2 == 0):
-    return(num1)
+def subtracao(a, b):
+  if (a == 0):
+    print(b)
+  elif (b == 0):
+    print(a)
   else:
-    return(num1 - num2)
+    print(f"A subtração dos numeros {a} e {b} é igual a: {a - b}")
 
-def multiplicacao(num1, num2):
-  if(num1 == 0):
-    return(0)
-  elif(num2 == 0):
-    return(0)
+def multiplicacao(a, b):
+  if(a == 0):
+    print(0)
+  elif(b == 0):
+    print(0)
   else:
-    return(num1 * num2)
+    print(f"O produto dos numeros {a} e {b} é igual a: {a * b}")
 
 def divisao(a, b):
   if(a == 0):
-    print("0")
+    print(0)
   elif(b == 0):
     print("Impossivel dividir por 0")
   else:
     print(f"A divisao dos numeros {a} e {b} é igual a: {a / b}")
 
+def fatorial(a):
+  if(a == 0):
+    print(0)
+  elif(a == 1):
+    print(1)
+  else:
+    print(f"O fatorial do numero {a} é {a * fatorial(a-1)}")
+
+def exponencial(a,b):
+  if(a == 0):
+    print (1)
+  elif(b == 1):
+    print (a)
+  else:
+    print(f"O numero {a} elevado a {b} é igual a: {a*exponencial(a,b -1)}")
+
 while continua != 0:
 
   num = int(input("Informe a operaçao desejada: \n [1 = soma] [2 = subtração] [3 = multiplicação] [4 = divisão] [5 = fatorial] [6 = exponencial]: "))
 
+ 
   a = float(input("informe o primeiro numero: "))
-  b = float(input("\ninforme o segundo numero: "))
+  if (num != 5):
+    b = float(input("\ninforme o segundo numero: "))
 
   if __name__ == "__main__":
     switch = {
         1: soma,
         2: subtracao,
         3: multiplicacao,
-        4: divisao
+        4: divisao,
+        5: fatorial,
+        6: exponencial
     }
 
     case = switch.get(num)
-    case()
+    if (num == 5):
+      case(a)
+    if (num != 5):
+      case(a,b)
 
   soma(a,b)
   subtracao(a,b)
   multiplicacao(a,b)
   divisao(a,b)
-
-  print("Deseja continuar? [1=sim] [0=não]")
+  
   continua = int(input("\nDeseja continuar? [1=sim] [0=não]: "))
+
+print("Você escolheu sair!")

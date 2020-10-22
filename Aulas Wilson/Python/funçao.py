@@ -74,15 +74,10 @@ while continua != 0:
     }
 
     case = switch.get(num)
-    if (num == 5):
-      case(a)
-    if (num != 5):
+    if(num != 5):
       case(a,b)
-
-  soma(a,b)
-  subtracao(a,b)
-  multiplicacao(a,b)
-  divisao(a,b)
+    elif(num == 5):
+      case(a)
   
   continua = int(input("\nDeseja continuar? [1=sim] [0=não]: "))
 

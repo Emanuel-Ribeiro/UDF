@@ -30,7 +30,19 @@ void imprimeFuncao(int vetor[], int tamanho)
 
  int main()
 {
-  int vetor[] = {29788, 988, 27, 8, 7, 9, 2};
+  int menu = 1;
+  int i = 0;
+  int vetor[] = {};
+
+  do
+  {
+    printf("Insira um valor inteiro no vetor: ");
+    scanf("%d", &vetor[i]);
+    i = i + 1;
+    printf("Deseja inserir mais um valor? ([1]-Sim | [0]-Nao):\n");
+    scanf("%d", &menu);
+  } while (menu != 0);
+  
   int tam = sizeof(vetor) / sizeof(vetor[0]);
   bubbleSort(vetor, tam);
   printf("Vetor ordenado: \n");

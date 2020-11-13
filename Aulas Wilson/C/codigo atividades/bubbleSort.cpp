@@ -56,12 +56,36 @@ void bubbleSort()
 
 void selectionSort() 
 {
-  // implementar aqui o algoritmos de orden ação Selection Sort
+  float aux;
+
+  for (int i=0; i<Qtd-1; i++)
+    for (int j = i + 1; j<Qtd; j++)
+      if (vetor[j] < vetor[i]) 
+      {
+        aux = vetor[j];
+        vetor[j] = vetor[i];
+        vetor[i] = aux;
+      }
 }
 
 void insertionSort() 
 {
-  // implementar aqui o algoritmos de orden ação Insertion Sort
+ int i, j; 
+ float aux; 
+
+    for (i = 1; i < Qtd; i++) 
+    {  
+        aux = vetor[i];  
+        j = i - 1;  
+
+        while (j >= 0 && vetor[j] > aux) 
+        {  
+            vetor[j + 1] = vetor[j];  
+            j = j - 1;  
+        }  
+        vetor[j + 1] = aux;  
+    }  
+    
 }
 
 void limparVetor() 
@@ -112,13 +136,13 @@ int main()
 	  imprimirVetor();
 
 	else if (resposta == 4)
-      bubbleSort();
+    bubbleSort();
 
 	else if (resposta == 5)
-      selectionSort();
+    selectionSort();
 
 	else if (resposta == 6)
-      insertionSort();
+    insertionSort();
 
 	else if (resposta == 7) 
   {
